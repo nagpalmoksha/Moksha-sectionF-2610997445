@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Restaurant Menu</title>
+</head>
+
+<body bgcolor="lightpink" text="#000000" link="#0000CC" vlink="#551A8B">
+
+  <center>
+    <h1>Interactive Restaurant Menu</h1>
+    <p><i>Click on any food item in the picture to learn more about it.</i></p>
+  </center>
+
+  <hr>
+
+  <!-- The food picture. usemap connects it to the map below. -->
+  <center>
+    <img src="food-image.png" width="830" height="554" alt="Restaurant table with food items" usemap="#foodmap" border="2">
+  </center>
+
+  <!-- IMAGE MAP
+       circle  = x, y, radius
+       rect    = left, top, right, bottom
+       poly    = x1,y1, x2,y2, x3,y3, ... (one pair for each corner)
+       default = the rest of the picture (keep it last) -->
+  <map name="foodmap">
+
+    <!-- 2 CIRCLES -->
+    <area shape="circle" coords="306,414,116" href="pizza.html" alt="Pizza" title="Pizza" target="_blank">
+    <area shape="circle" coords="668,154,56" href="burger.html" alt="Burger" title="Burger" target="_blank">
+
+    <!-- 2 RECTANGLES -->
+    <area shape="rect" coords="144,176,280,260" href="french-fries.html" alt="French Fries" title="French Fries" target="_blank">
+    <area shape="rect" coords="600,212,752,254" href="menu-card.html" alt="Menu Card" title="Menu Card" target="_blank">
+
+    <!-- 2 POLYGONS -->
+    <area shape="poly" coords="40,370,84,340,140,340,154,390,140,450,100,486,40,486,16,430" href="sandwich.html" alt="Sandwich" title="Sandwich" target="_blank">
+    <area shape="poly" coords="710,370,790,386,810,450,760,480,710,450" href="cake-slice.html" alt="Cake Slice" title="Cake Slice" target="_blank">
+
+    <!-- 1 DEFAULT -->
+    <area shape="default" href="other.html" alt="Remaining/Other Area" title="Other items" target="_blank">
+
+  </map>
+
+  <br>
+  <hr>
+
+  <center>
+    <h3>Food Items & Shapes Used</h3>
+    <table border="1" cellpadding="6" cellspacing="0" bgcolor="#FFFFFF">
+      <tr bgcolor="#EEEEEE">
+        <th>Food Item</th>
+        <th>Shape</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>Pizza</td>
+        <td>circle</td>
+        <td><a href="pizza.html" target="_blank">pizza.html</a></td>
+      </tr>
+      <tr>
+        <td>Burger</td>
+        <td>circle</td>
+        <td><a href="burger.html" target="_blank">burger.html</a></td>
+      </tr>
+      <tr>
+        <td>French Fries</td>
+        <td>rect</td>
+        <td><a href="french-fries.html" target="_blank">french-fries.html</a></td>
+      </tr>
+      <tr>
+        <td>Menu Card</td>
+        <td>rect</td>
+        <td><a href="menu-card.html" target="_blank">menu-card.html</a></td>
+      </tr>
+      <tr>
+        <td>Sandwich</td>
+        <td>poly</td>
+        <td><a href="sandwich.html" target="_blank">sandwich.html</a></td>
+      </tr>
+      <tr>
+        <td>Cake Slice</td>
+        <td>poly</td>
+        <td><a href="cake-slice.html" target="_blank">cake-slice.html</a></td>
+      </tr>
+      <tr>
+        <td>Remaining/Other Area</td>
+        <td>default</td>
+        <td><a href="other.html" target="_blank">other.html</a></td>
+      </tr>
+    </table>
+  </center>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Readers' Haven – Book Registration & Order Form</title>
+</head>
+<body>
+    <form action="submit_order.php" target="_blank">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Enter full name" required>
+        <br><br>
+
+        <label for="customerEmail">Email Address:</label>
+        <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter email address" required>
+        <br><br>
+
+        <label for="customerMobile">Mobile Number:</label>
+        <input type="tel" id="customerMobile" name="customerMobile" placeholder="Enter mobile number" required>
+        <br><br>
+
+        <label for="customerAge">Age:</label>
+        <input type="number" id="customerAge" name="customerAge">
+        <br><br>
+
+        <label for="customerPassword">Password:</label>
+        <input type="password" id="customerPassword" name="customerPassword" required>
+        <br><br>
+
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate">
+        <br><br>
+
+        <label for="deliveryTime">Preferred Delivery Time:</label>
+        <input type="time" id="deliveryTime" name="deliveryTime">
+        <br><br>
+
+        <label for="bookCategory">Favorite Book Category:</label>
+        <select id="bookCategory" name="bookCategory" required>
+            <option value="">Select a Category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Childrens Books">Children’s Books</option>
+        </select>
+        <br><br>
+
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required>
+        <br><br>
+
+        <label for="bookQuantity">Quantity:</label>
+        <input type="number" id="bookQuantity" name="bookQuantity" min="1" value="1" required>
+        <br><br>
+
+        <label>Preferred Payment Method:</label>
+        <input type="radio" id="payCOD" name="payment" value="Cash on Delivery" required>
+        <label for="payCOD">Cash on Delivery</label>
+        <input type="radio" id="payOnline" name="payment" value="Online Payment" required>
+        <label for="payOnline">Online Payment</label>
+        <br><br>
+
+        <label>Additional Services:</label>
+        <input type="checkbox" id="srvWrap" name="services" value="Gift Wrapping">
+        <label for="srvWrap">Gift Wrapping</label>
+        <input type="checkbox" id="srvMark" name="services" value="Bookmark">
+        <label for="srvMark">Bookmark</label>
+        <input type="checkbox" id="srvExpress" name="services" value="Express Delivery">
+        <label for="srvExpress">Express Delivery</label>
+        <input type="checkbox" id="srvCard" name="services" value="Greeting Card">
+        <label for="srvCard">Greeting Card</label>
+        <br><br>
+
+        <input type="hidden" name="formIdentifier" value="Readers Haven Book Order">
+
+        <label for="refFile">Upload Reference Image/Document:</label>
+        <input type="file" id="refFile" name="refFile" accept="image/*, .pdf">
+        <br><br>
+
+        <label for="deliveryAddress">Delivery Address and Special Instructions:</label>
+        <textarea id="deliveryAddress" name="deliveryAddress" rows="5" cols="40" placeholder="Enter complete address and instructions"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
